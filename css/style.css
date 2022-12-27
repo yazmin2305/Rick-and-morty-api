@@ -1,0 +1,128 @@
+:root {
+    /*custom properties*/
+    --fondo: rgb(32, 35, 41);
+    --gris: rgb(60, 62, 68);
+    --primario: #FFC107;
+    --blanco: #ffffff;
+    --subtitulo: rgb(245, 245, 245);
+    --titulo: rgb(158, 158, 158);
+}
+
+html {
+    /* hack para reiniciar el tamaño y poder utilizar los "rem" con facilidad*/
+    font-size: 62.5%;
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+}
+
+h2,
+p {
+    color: var(--blanco);
+}
+
+.contenedor {
+    background-color: var(--fondo);
+    padding: 0px;
+}
+
+.menu a {
+    color: #212121;
+    text-decoration: none;
+    display: inline-block;
+    /* quitar la linea debajo del enlace */
+    text-decoration: none;
+    /* tamaño de la letra */
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.5rem;
+
+}
+
+.navegacion-principal {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu a:hover {
+    color: var(--primario);
+}
+
+.titulo {
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.contenedor_tarjeta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 5rem 0rem 5rem;
+    gap: 3rem;
+}
+
+.contenedor_json {
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: row;
+    border-radius: 1.5rem;
+
+}
+
+.info_json {
+    padding: 2rem;
+}
+
+.imagen_json img {
+    display: block;
+    border-radius: 1.5rem 0rem 0rem 1.5rem;
+}
+
+.footer {
+    padding: 5rem;
+    background-color: var(--fondo);
+    text-align: center;
+    font-size: 18px;
+}
+
+.titulo {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.info_json h2 {
+    font-size: 2.5rem;
+}
+
+.titulo_info {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--titulo);
+}
+
+.subtitulo_info {
+    color: var(--subtitulo);
+}
+
+.estado {
+    font-size: 16px;
+    font-weight: 500;
+}
